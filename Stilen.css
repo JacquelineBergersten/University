@@ -1,0 +1,124 @@
+/*Typsnitt och färg på rubrikerna H1-H4 samt p.*/
+/*Eftersom jag inte kommer använda rubrikformat lägre än h4 så sätts inget värde för detta*/
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+h1 {
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #50398F; 
+}	
+
+h2 {
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #50398F; 
+}	
+
+h3 {
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #50398F; 
+}
+
+h4 {
+	
+	font-family: 'Open Sans', sans-serif;
+	color: #50398F; 
+}
+p{
+	font-family: 'EB Garamond', sans-serif;
+	color: #423E0D;
+}
+li{
+	font-family: 'EB Garamond', sans-serif;
+	color: #423E0D;
+	font-weight:bold;
+}
+ul{
+	font-family: 'EB Garamond', sans-serif;
+	color: #423E0D;
+	font-weight:bold;
+}
+/*Footern: blocket sätts färgen till mörklila, texten till vit*/
+footer{
+	width:100%;
+	height:80px;
+	text-align: center;
+	padding: 10px;
+	background-color: #201442;
+	color: white;
+	overflow:hidden;
+	margin-left: auto;
+    margin-right: auto;
+}
+/*knappen: textfärg sätts till vitt och i fetstil för att göra texten synligare, border-radius sätts till 10 px för att ge en lätt kurvning på hörnen*/
+button{
+	padding: 20px;
+	background-color: #50398F;
+	color: white;
+	font-weight:bold;
+	border-radius: 10px;
+}
+/*klasser som används*/
+.leftcol{
+	float: left;
+	width: 50%;
+}
+.rightcol{
+	float: left;
+	width: 50%;
+	background-color: white;
+}
+.clearfix {
+  overflow: auto;
+  padding: 5px;
+}
+
+
+/*Döljer filmen vid print*/
+@media print {
+  video{
+ display:none;
+}
+}
+/*sätter måtten på en skärm (768px och större) och att då .leftcol och .rightcol är 100% (hamna bredvid varandra)*/
+
+@media screen and (max-width: 768px) {
+  .leftcol, .rightcol {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/*Typsnitt, positionering och färg inom dessa element*/
+td{
+	text-align: center;
+	color: white;
+	font-family: 'EB Garamond', sans-serif;
+}
+table{
+	text-align: center;
+	color: white;
+	font-family: 'EB Garamond', sans-serif;
+	margin-left: auto;
+    margin-right: auto;
+}
+/*LÄNKHANTERING*/
+a:link {
+  color: #ffffff;
+}
+
+/* besökt länk */
+a:visited {
+  color: #8F8839;
+}
+
+/* när musen är över länk */
+a:hover {
+  color: #423E0D;
+}
+
+/* vald länk */
+a:active {
+  color: #8B6EDB;
+}
